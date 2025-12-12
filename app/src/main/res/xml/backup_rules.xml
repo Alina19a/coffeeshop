@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Включаем в бэкап SharedPreferences -->
+    <include domain="sharedpref" path="."/>
+    <!-- Исключаем Firebase файлы -->
+    <exclude domain="file" path="FirebaseApp"/>
+    <exclude domain="database" path="FirebaseApp"/>
+</full-backup-content>

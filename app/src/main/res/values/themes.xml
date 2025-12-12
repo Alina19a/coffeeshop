@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Базовая тема приложения -->
+    <style name="Theme.CoffeeShop" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Цвет primary для виджетов Material Design -->
+        <item name="colorPrimary">@color/primary_teal</item>
+        <item name="colorPrimaryVariant">@color/primary_dark_teal</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Цвет secondary для виджетов Material Design -->
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Цвет фона -->
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Цвета для TextView и EditText -->
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+
+        <!-- Стили для Material Components -->
+        <item name="materialButtonStyle">@style/Widget.CoffeeShop.MaterialButton</item>
+        <item name="textInputStyle">@style/Widget.CoffeeShop.TextInputLayout</item>
+    </style>
+
+    <!-- Стиль для MaterialButton -->
+    <style name="Widget.CoffeeShop.MaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/primary_teal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Стиль для TextInputLayout -->
+    <style name="Widget.CoffeeShop.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary_teal</item>
+        <item name="hintTextColor">@color/primary_teal</item>
+        <item name="errorTextColor">@color/error_red</item>
+    </style>
+
+    <!-- Тема для Toolbar/ActionBar -->
+    <style name="Theme.CoffeeShop.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <!-- Тема для всплывающих окон -->
+    <style name="Theme.CoffeeShop.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:background">@color/background_light</item>
+    </style>
+</resources>
